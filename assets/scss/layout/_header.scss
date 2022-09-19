@@ -1,0 +1,50 @@
+@use "../abstracts/" as *;
+
+.header {
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+  .nav {
+    padding: 1.5rem 0;
+    @include flex(space-between, center);
+
+    .nav-logo {
+      a {
+        color: $black-color;
+        font-size: 2.8rem;
+        font-weight: 500;
+      }
+    }
+
+    .nav-list {
+      @include flex(flex-start, center);
+    }
+
+    .nav-item {
+      margin-left: 2.4rem;
+    }
+
+    .nav-link {
+      color: $grey-color;
+      font-size: 1.6rem;
+      &:hover {
+        color: $black-color;
+      }
+    }
+    i {
+      font-size: 3rem;
+      display: none;
+    }
+  }
+}
+@media (max-width: 991px) {
+  .header {
+    .nav {
+      i {
+        display: block;
+      }
+      .nav-list {
+        display: none;
+      }
+    }
+  }
+}

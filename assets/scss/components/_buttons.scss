@@ -1,0 +1,14 @@
+@use "../abstracts/" as *;
+
+.btn {
+  background-color: $yellow-color;
+  border: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 25px;
+  font-size: 1.8rem;
+  color: #111;
+  cursor: pointer;
+  &:hover {
+    background-color: #ffca2c;
+  }
+}

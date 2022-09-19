@@ -1,0 +1,51 @@
+@use "../abstracts/" as *;
+@use "../base/" as *;
+.contact {
+  .container {
+    padding: 3rem 0;
+    .row {
+      display: flex;
+      gap: 3rem;
+      .content-right {
+        flex: 50%;
+        justify-content: space-between;
+        .content-title {
+          font-size: 3rem;
+        }
+        .content-text {
+          color: $grey-color;
+          font-size: 1.5rem;
+        }
+      }
+      .content-left {
+        ul {
+          font-size: 1.7rem;
+          line-height: 3rem;
+          li{
+            span{
+              color:$grey-color;
+            }
+          }
+        }
+        flex: 50%;
+        @include flex(space-between, center);
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  .contact {
+    .container {
+      .row {
+        flex-direction: column;
+        text-align: center;
+        .content-left {
+          flex-direction: column;
+          ul {
+            padding-bottom: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
