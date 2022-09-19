@@ -21,9 +21,9 @@
         ul {
           font-size: 1.7rem;
           line-height: 3rem;
-          li{
-            span{
-              color:$grey-color;
+          li {
+            span {
+              color: $grey-color;
             }
           }
         }
@@ -39,6 +39,11 @@
       .row {
         flex-direction: column;
         text-align: center;
+        .content-right {
+          .content-title {
+            font-size: 2rem;
+          }
+        }
         .content-left {
           flex-direction: column;
           ul {

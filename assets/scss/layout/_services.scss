@@ -43,3 +43,15 @@
     }
   }
 
+  @media (max-width: 991px) {
+    .services{
+      .container{
+        .service-title{
+          font-size: 2rem;
+        }
+        .services-container{
+          
+        }
+      }
+    }
+  }
